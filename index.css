@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+form {
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input, select {
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background: green;
+    color: white;
+}
+
+.edit-button {
+    background: orange;
+    color: white;
+}
+
+.delete-button {
+    background: red;
+    color: white;
+}
+
+.rsvp-btn {
+    background: #007bff;
+    color: white;
+}
+
+.rsvp-btn[disabled] {
+    background: green !important;
+    color: white !important;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

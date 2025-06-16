@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Guest List Manager</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Event Guest List Manager</h1>
+        <p style="margin-top: 10px; color: #555;">
+    This tool allows you to efficiently manage your event guest list by recording participant <br> details, tracking RSVP confirmations, and maintaining a clear, <br> editable record—all with a limit of 10 entries to ensure focus and organization.
+</p>
+
+    </header>
+<div class="container">
+    <div>
+        <h1 class="h1">user input</h1>
+    </div>
+    <main id="userForm">
+        <form id="userForm" class="main">
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">phone</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="place">place</label>
+            <input type="text" id="place" name="" required><br>
+
+            <label for="category">category:</label>
+            <select id="user-category" name="category">
+                <option value=""></option>
+                <option value="family">family</option>
+                <option value="friend">friend</option>
+                <option value="collegue">collegue</option>
+            </select>
+            <button>submit</button>
+        </form>
+    </main>
+
+    <section>
+        <div>
+            <h2>User Table</h2>
+        </div>
+        <table class="userTable" id="userTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>place</th>
+                    <th>category</th>
+                    <th>RSVP</th>
+                    <th>Time Added</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
